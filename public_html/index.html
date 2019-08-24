@@ -1,9 +1,105 @@
+<!-- official KSU colors gold #FFC425 and black #231F20 -->
 <html>
     <head>
-        <title>Alex Manzer</title>
+        <title>Alex Manzer Internet Programming</title>
+        <style>
+            body {
+                background-color: #FFC425;
+            }
+
+            .card {
+                padding-left: 50px;
+                padding-right: 50px;
+                padding-top: 25px;
+                display: flex;
+                flex-direction: column;
+            }
+            
+            .card-heading {
+                background-color: #231F20;
+                width:   100%;
+                display:flex;
+                flex-direction: column;
+            }
+
+            .logo {
+                max-width:90%;
+                max-height:95%;
+                padding-left:5%;
+                padding-top: 5%;
+            }
+
+            h1 {
+                text-align: center;
+                color: white;
+            }
+
+            h3 {
+                text-align: center;
+            }
+
+            .card-body {
+                display: flex;
+            }
+
+            .card-sidebar {
+                background-color: lightgreen;
+                padding-right: 20px;
+                padding-left: 20px;
+                display:flex;
+                flex-direction: column;
+                padding-bottom: 20px;
+                width: 15%;
+            }
+
+            ul {
+                list-style-type: none;
+                margin-left:5px;
+            }
+
+            a {
+                text-align: center;
+            }
+
+            .card-content {
+                padding-left: 20px;
+                padding-right: 20px;
+                background-color: white;
+            }
+        </style>
     </head>
     <body>
-        Hello from index.html
-        test test
+        <!-- card class -->
+        <div class='card'>
+            <div class='card-heading'>
+                <img class='logo' src='ksulogodark.png' alt='Kennesaw State University'>
+                <h1>College Of Computing and Software Engineering</h1>
+            </div>
+
+            <div class='card-body'>
+                <div class='card-sidebar'>
+                    <h3>Assignments</h3>
+                    <a href='Assign-1-Part-2/index.html'>Assign-1-Part-2</a>
+                    <a href='Assign-1-Part-3/index.html'>Assign-1-Part-3</a>
+                    <a href='Assign-2/index.html'>Assign-2</a>
+                    <a href='Assign-3/index.html'>Assign-3</a>
+                    <a href='Assign-4/index.html'>Assign-4</a>
+                    <a href='Assign-5/index.html'>Assign-5</a>
+                </div>
+
+                <div class='card-content'>
+                    <h2>Alex Manzer</h2>
+                    
+                    <p>
+                        Hello my name is Alex Manzer and I am a student at Kennesaw State University!
+                        I Plan on graduating in december with a major in computer science.
+                        If there are any problems, email me: <br>
+                        <a href='mailto: amanzer@students.kennesaw.edu'>Email</a>
+                    </p>
+
+                    <a href='https://kennesaw.edu'>KSU Offical Website</a>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
