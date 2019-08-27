@@ -5,6 +5,7 @@
         <style>
             body {
                 background-color: #FFC425;
+                min-width:700px;
             }
 
             .card {
@@ -13,20 +14,22 @@
                 padding-top: 25px;
                 display: flex;
                 flex-direction: column;
+                justify-content: center;
             }
             
             .card-heading {
                 background-color: #231F20;
                 width:   100%;
                 display:flex;
+                justify-content: center;
                 flex-direction: column;
             }
 
             .logo {
-                max-width:90%;
-                max-height:95%;
-                padding-left:5%;
-                padding-top: 5%;
+                max-width:40%;
+                min-width:500px;
+                margin:auto;
+                padding-top:3%;
             }
 
             h1 {
@@ -62,8 +65,12 @@
             }
 
             .card-content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
                 padding-left: 20px;
                 padding-right: 20px;
+                padding-bottom: 20px;
                 background-color: white;
             }
         </style>
@@ -72,7 +79,7 @@
         <!-- card class -->
         <div class='card'>
             <div class='card-heading'>
-                <img class='logo' src='ksulogodark.png' alt='Kennesaw State University'>
+                <img class='logo' src='./assets/ksulogodark.png' alt='Kennesaw State University'>
                 <h1>College Of Computing and Software Engineering</h1>
             </div>
 
@@ -89,11 +96,12 @@
 
                 <div class='card-content'>
                     <h2>Alex Manzer</h2>
-                    
+                    <img src='./assets/apple.png' width='100px'>
+
                     <p>
                         Hello my name is Alex Manzer and I am a student at Kennesaw State University!
                         I Plan on graduating in december with a major in computer science.
-                        If there are any problems, email me: <br>
+                        If there are any problems, email me:
                         <a href='mailto: amanzer@students.kennesaw.edu'>Email</a>
                     </p>
 
