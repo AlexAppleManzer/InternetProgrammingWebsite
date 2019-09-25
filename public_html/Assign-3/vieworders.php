@@ -23,7 +23,7 @@
         die("Connection failed: " . $conn->connect_error);
       }
 
-      $sql = "SELECT OrderId, TireQuantity, OilQuantity, SparkQuantity, Address FROM Orders";
+      $sql = "SELECT * FROM Orders";
     
       $result = $conn->query($sql);
 
@@ -31,7 +31,7 @@
         echo "<table><tr><th>Order Id</th><th>Tire Quantity</th><th>Oil Quantity</th><th>Spark Quantity</th><th>Address</th></tr>";
       // output data of each row
       while($row = $result->fetch_assoc()) {
-        echo "<tr><td>".$row["id"]."</td><td>".$row["firstname"]." ".$row["lastname"]."</td></tr>";
+        echo "<tr><td>".$row["OrderId"]."</td><td>".$row["TireQuantity"]."</td><td>".$row["OilQuantity"]."</td><td>".$row[SparkQuantity]."</td><td>".$row[Address]."</td></tr>";
       }
         echo "</table>";
       } else {
