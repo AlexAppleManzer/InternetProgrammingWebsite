@@ -7,8 +7,8 @@
   $sparkqty = (int) 
   $_POST['sparkqty'];  
   $address = preg_replace('/\t|\R/',' ',
-  $_POST['address']);  $document_root = 
-  $_SERVER['DOCUMENT_ROOT'];  
+  $_POST['address']);  
+  $document_root = $_SERVER['DOCUMENT_ROOT'];  
   $date = date('H:i, jS F Y'); 
 ?>
 
@@ -62,6 +62,7 @@
     @$fp = fopen("$document_root/../orders/orders.txt", 'ab');
     
     if (!$fp) { 
+      echo document_root;
       echo "<p><strong> Your order could not be processed at this time. Please try again later.</strong></p>"; 
       exit; 
     }
