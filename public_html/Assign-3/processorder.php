@@ -56,11 +56,7 @@
 
       echo "<p>Address to ship to is ".htmlspecialchars($address)."</p>";
 
-      $outputstring = $date."\t".$tireqty." tires \t".$oilqty." oil\t"
-                      .$sparkqty." spark plugs\t\$".$totalamount
-                      ."\t". $address."\n";
-
-       // open file for appending
+      // open file for appending
       $servername = "localhost";
       $username = "amanzer";
       $password = "";
