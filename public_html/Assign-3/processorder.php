@@ -72,12 +72,10 @@
               VALUES ($tireqty, $oilqty, $sparkqty, '$address')";
 
       if ($conn->query($sql) === TRUE) {
-        echo "New record created successfully";
+        echo "<p>Order written.</p>";
       } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
       }
-      echo "Connected successfully";
-      echo "<p>Order written.</p>";
     ?>
   </body>
 </html>

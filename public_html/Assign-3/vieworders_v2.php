@@ -11,30 +11,32 @@
     <h1>Bob's Auto Parts</h1>
     <h2>Customer Orders</h2> 
     <?php
-      @$fp = fopen("$document_root/../orders/orders.txt", 'rb');
-      flock($fp, LOCK_SH); // lock file for reading
+      $servername = "localhost";
+      $username = "username";
+      $password = "password";
+      $dbname = "myDB";
 
-      if (!$fp) {
-        echo "<p><strong>No orders pending.<br />
-              Please try again later.</strong></p>";
-        exit;
+      // Create connection
+      $conn = new mysqli($servername, $username, $password, $dbname);
+      // Check connection
+      if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
       }
 
-      while (!feof($fp)) {
-         $order= fgets($fp);
-         echo htmlspecialchars($order)."<br />";
+      $sql = "SELECT OrderId, TireQuantity, OilQuantity, SparkQuantity, Address FROM MyGuests";
+      $result = $conn->query($sql);
+
+      if ($result->num_rows > 0) {
+        echo "<table><tr><th>Order Id</th><th>Tire Quantity</th><th>Oil Quantity</th><th>Spark Quantity</th><th>Address</th></tr>";
+      // output data of each row
+      while($row = $result->fetch_assoc()) {
+        echo "<tr><td>".$row["id"]."</td><td>".$row["firstname"]." ".$row["lastname"]."</td></tr>";
       }
-
-      flock($fp, LOCK_UN); // release read lock
-
-      echo 'Final position of the file pointer is '.(ftell($fp));
-      echo '<br />';
-      rewind($fp);
-      echo 'After rewind, the position is '.(ftell($fp));
-      echo '<br />';
-
-      fclose($fp); 
-
+        echo "</table>";
+      } else {
+        echo "0 results";
+      }
+      $conn->close(); 
     ?>
   </body>
 </html>
