@@ -1,5 +1,5 @@
 CREATE TABLE Orders (
-    OrderId INT NOT NULL PRIMARY KEY,
+    OrderId INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     TireQuantity int,
     OilQuantity int,
     SparkQuantity int,
