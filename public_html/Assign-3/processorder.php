@@ -4,7 +4,7 @@
   $oilqty = (int) $_POST['oilqty'];
   $sparkqty = (int) $_POST['sparkqty'];
   $address = preg_replace('/\t|\R/',' ',$_POST['address']);
-  $document_root = $_SERVER['DOCUMENT_ROOT'];
+  $document_root = $_SERVER['__PATH__'];
   $date = date('H:i, jS F Y');
 ?>
 <!DOCTYPE html>
@@ -61,20 +61,19 @@
                       ."\t". $address."\n";
 
        // open file for appending
-       @$fp = fopen("$document_root/../orders/orders.txt", 'ab');
+      $servername = "localhost";
+      $username = "amanzer";
+      $password = "";
 
-       if (!$fp) {
-         echo "<p><strong> Your order could not be processed at this time.
-               Please try again later.</strong></p>";
-         exit;
-       }
+      // Create connection
+      $conn = new mysqli($servername, $username, $password);
 
-       flock($fp, LOCK_EX);
-       fwrite($fp, $outputstring, strlen($outputstring));
-       flock($fp, LOCK_UN);
-       fclose($fp);
-
-       echo "<p>Order written.</p>";
+      // Check connection
+      if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+      }
+      echo "Connected successfully";
+      echo "<p>Order written.</p>";
     ?>
   </body>
 </html>
