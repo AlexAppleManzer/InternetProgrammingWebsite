@@ -69,7 +69,7 @@
         die("Connection failed: " . $conn->connect_error);
       }
       $sql = "INSERT INTO amanzer.Orders (TireQuantity, OilQuantity, SparkQuantity, Address)
-              VALUES ($tireqty, $oilqty, $sparkqty, $address);";
+              VALUES ($tireqty, $oilqty, $sparkqty, '$address')";
 
       if ($conn->query($sql) === TRUE) {
         echo "New record created successfully";
