@@ -62,7 +62,7 @@
     @$fp = fopen("$document_root/../orders/orders.txt", 'ab');
     
     if (!$fp) { 
-      echo document_root;
+      echo $document_root;
       echo "<p><strong> Your order could not be processed at this time. Please try again later.</strong></p>"; 
       exit; 
     }
