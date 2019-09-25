@@ -23,7 +23,8 @@
         die("Connection failed: " . $conn->connect_error);
       }
 
-      $sql = "SELECT OrderId, TireQuantity, OilQuantity, SparkQuantity, Address FROM MyGuests";
+      $sql = "SELECT OrderId, TireQuantity, OilQuantity, SparkQuantity, Address FROM Orders";
+    
       $result = $conn->query($sql);
 
       if ($result->num_rows > 0) {
