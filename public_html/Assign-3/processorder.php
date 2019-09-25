@@ -59,7 +59,7 @@
     echo "<p>Address to ship to is ".htmlspecialchars($address)."</p>";
     $outputstring = $date."\t".$tireqty." tires \t".$oilqty." oil\t" .$sparkqty." spark plugs\t\$".$totalamount ."\t". $address."\n";
     // open file for appending 
-    @$fp = fopen("$document_root/../orders/orders.txt", 'ab');
+    @$fp = fopen("./orders/orders.txt", 'ab');
     
     if (!$fp) { 
       echo $document_root;
