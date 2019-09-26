@@ -48,5 +48,6 @@
       }
       $conn->close(); 
     ?>
+    <a href="./index.html">New Order</a>
   </body>
 </html>

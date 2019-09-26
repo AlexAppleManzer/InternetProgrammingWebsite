@@ -77,6 +77,9 @@
         echo "Error: " . $sql . "<br>" . $conn->error;
       }
     ?>
+
+    <a href="./index.html">New Order</a>
+    <a href="./vieworders.php">View Orders</a>
   </body>
 </html>
 
