@@ -8,7 +8,7 @@
     <title>Bob's Auto Parts - Customer Orders</title>
     <style>
       table {
-        border: 0px;
+        border: 2px;
       }
     </style>
   </head>
