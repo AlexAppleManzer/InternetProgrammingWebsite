@@ -8,7 +8,11 @@
     <title>Bob's Auto Parts - Customer Orders</title>
     <style>
       table {
-        border: 2px;
+        border-collapse: collapse;
+      }
+
+      table, th, td {
+        border: 1px solid black;
       }
     </style>
   </head>
