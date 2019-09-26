@@ -66,7 +66,7 @@
 
       // Check connection
       if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
+        throw new Exception("Connection failed: " . $conn->connect_error);
       }
       $sql = "INSERT INTO amanzer.Orders (TireQuantity, OilQuantity, SparkQuantity, Address)
               VALUES ($tireqty, $oilqty, $sparkqty, '$address')";
@@ -74,7 +74,7 @@
       if ($conn->query($sql) === TRUE) {
         echo "<p>Order written.</p>";
       } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
+        throw new Exception("Error: " . $sql . "<br>" . $conn->error);
       }
     ?>
 
