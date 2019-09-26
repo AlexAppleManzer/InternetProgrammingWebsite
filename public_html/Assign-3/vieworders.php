@@ -6,6 +6,11 @@
 <html>
   <head>
     <title>Bob's Auto Parts - Customer Orders</title>
+    <style>
+      table {
+        border: 0px;
+      }
+    </style>
   </head>
   <body>
     <h1>Bob's Auto Parts</h1>
