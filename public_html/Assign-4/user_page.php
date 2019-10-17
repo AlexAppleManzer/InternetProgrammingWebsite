@@ -63,7 +63,7 @@
 		    $password=$_POST["p1"];
 			}
 			$query="select * from students where email='$email' and password='$password'";
-			$res_id=MySQLi_Connect('localhost','root','@connectme','shangout');
+			$res_id=MySQLi_Connect('localhost','amanzer','','shangout');
 			if(MySQLi_Connect_Errno()) {
 				echo "<tr align='center'> <td colspan='5'> Failed to connect to MySQL </td> </tr>";
 			}
