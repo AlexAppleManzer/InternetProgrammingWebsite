@@ -137,7 +137,7 @@
 			//$query="INSERT INTO studs VALUES('$name','$email',$age);";
 		//MySQL Magic :D
 			//Getting Resource ID
-			$res_id=MySQLi_Connect('localhost','amanzer','','shangout');
+			$res_id=MySQLi_Connect('localhost','amanzer','','amanzer');
 			if(MySQLi_Connect_Errno()) {
 				echo "<tr align='center'> <td colspan='5'> Failed to connect to MySQL </td> </tr>";
 			}
