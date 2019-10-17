@@ -1,10 +1,4 @@
-use these commands to create a db
-
->>>create database shangout;
-
->>>use shangout
-
->>>create table students (
+create table students (
    id int not null primary key,
    name varchar(50) not null,
    email varchar(50) not null,
@@ -13,14 +7,14 @@ use these commands to create a db
    password varchar(50) not null
    );
 
->>>create table messages (
+create table messages (
    id int not null primary key,
    sender_id int,
    receiver_id int,
    message varchar(500)
    );
 
->>>create table friends (
+create table friends (
    id int not null primary key,
    receiver_id int not null,
    receiver_name varchar(50),
@@ -30,7 +24,7 @@ use these commands to create a db
    comp int default 0
    );
 
->>>create table are_friends (
+create table are_friends (
    id int not null primary key,
    frnd_one_id int,
    frnd_two_id int,
@@ -38,7 +32,7 @@ use these commands to create a db
    extra int default 0
    );
 
->>>CREATE TABLE IF NOT EXISTS `status_here` (
+CREATE TABLE IF NOT EXISTS `status_here` (
      `id` int(11) NOT NULL AUTO_INCREMENT, 
      `status` varchar(300) DEFAULT NULL,
      `user_id` int(11) NOT NULL,
