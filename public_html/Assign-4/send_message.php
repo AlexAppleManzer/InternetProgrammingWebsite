@@ -102,18 +102,18 @@
 				}
 				$email=sec($_POST["n1"]);
 				$text=sec($_POST["t1"]);
-				$resid=MySQLi_Connect('localhost','root','@connectme','shangout');
+				$res_id=MySQLi_Connect('localhost','root','@connectme','shangout');
 					if(MySQLi_Connect_Errno()) {
 						echo "<tr align='center'> <td colspan='5'> Failed to connect to MySQL </td> </tr>";
 					}
 					else {
-						$count=MySQLi_Query($resid,"select id from students where email='".$email."'");
+						$count=MySQLi_Query($res_id,"select id from students where email='".$email."'");
 						$count_id=MySQLi_Fetch_Assoc($count);
 						if($count_id) {
 						$receiver=$count_id["id"];
 						$sender=$_SESSION["user_id"];
 						
-						$count=MySQLi_Query($resid,"select (max(id)+1) as count  from messages");
+						$count=MySQLi_Query($res_id,"select (max(id)+1) as count  from messages");
 						$count_id=MySQLi_Fetch_Assoc($count);
 						
 						if($count_id["count"]) {
@@ -123,7 +123,7 @@
 						$query="insert into messages values (1,".$sender.",".$receiver.",'$text')";
 						}
 						
-						$res=MySQLi_Query($resid,$query);
+						$res=MySQLi_Query($res_id,$query);
 						
 						if($res) {
 							?>
@@ -145,7 +145,7 @@
 						else {
 							echo "<tr align='center'> <td colspan='5'> <font color='red'> Sorry, User does not exists! </font> </td> </tr>";
 						}
-						MySQLi_Close($resid);
+						MySQLi_Close($res_id);
 					}
 			
 			}

@@ -31,10 +31,10 @@
 
 	$user_id = $_SESSION["user_id"];
 	include 'mysql.php';
-	if($resid) {
+	if($res_id) {
 	
 	
-	$count = MySQLi_Query($resid,"select frnd_two_id from are_friends where frnd_one_id = $user_id union select frnd_one_id from are_friends where frnd_two_id = $user_id");
+	$count = MySQLi_Query($res_id,"select frnd_two_id from are_friends where frnd_one_id = $user_id union select frnd_one_id from are_friends where frnd_two_id = $user_id");
 	
 	echo "<tr align='center'> <td colspan='5'>Your Friends:- </td> </tr> <tr align='center'> <td colspan='5'><table align='center' >";
 	
@@ -44,7 +44,7 @@
 	while(($rows=MySQLi_Fetch_Row($count))==True) {
 
 	$query = "select name,email,gender from students where id = $rows[0] ";
-	$result = MySQLi_Query($resid,$query);
+	$result = MySQLi_Query($res_id,$query);
 
 	if($result) {
 

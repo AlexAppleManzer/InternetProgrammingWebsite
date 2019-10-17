@@ -85,10 +85,10 @@
 	
 		include 'mysql.php';
 		
-		if($resid) {
+		if($res_id) {
 		$user_id = $_SESSION['user_id'];
 		$query = "insert into status_here (status,user_id,timestamp,future_use) values ('$status',$user_id,NOW(),NULL)";
-		$qwer = MySQLi_Query($resid,$query);
+		$qwer = MySQLi_Query($res_id,$query);
 		if($qwer) {
 			?>
 			<script type="text/javascript" src="notify.js"></script>
@@ -103,7 +103,7 @@
 		else {
 			echo "<tr align='center'> <td colspan='5'> <font color='green'> Sorry, Something went wrong! Refresh the page and try again! </font> </td> </tr>";
 		}
-		MySQLi_Close($resid);
+		MySQLi_Close($res_id);
 			}
 		}
 		?>
@@ -114,9 +114,9 @@
 			$user_id = $_SESSION['user_id'];
 			include 'mysql.php';
 				//Displaying past statuses
-			if($resid) {
+			if($res_id) {
 				$query1 = "select status,time_format(timestamp,'%l:%i:%s %p') as time,date_format(timestamp,'%D of %M,%Y') as date from status_here where user_id = $user_id order by id desc";
-				$result = MySQLi_Query($resid,$query1);
+				$result = MySQLi_Query($res_id,$query1);
 				$f=1;
 				while(($rows=MySQLi_Fetch_Row($result))==True) {
 				$f++;
@@ -132,7 +132,7 @@
 				
 				echo "</table>";
 			}
-			MySQLi_Close($resid);
+			MySQLi_Close($res_id);
 		}
 		
 		?>
