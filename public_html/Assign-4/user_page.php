@@ -153,6 +153,7 @@
 		</table>
 			<footer align='center'>
 			&copy; All Rights Reserved.	<?php if(isset($_SESSION["user_id"])) {echo $_SESSION["name"]; } ?>
+			<p>Source: https://github.com/abhn/simple-php-mysql-project</p>
 			</footer>
 </body>
 </html>

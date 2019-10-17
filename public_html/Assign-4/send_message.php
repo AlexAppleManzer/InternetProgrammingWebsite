@@ -158,6 +158,7 @@
 		</table>
 			<footer align='center'>
 			&copy; All Rights Reserved.	
+			<p>Source: https://github.com/abhn/simple-php-mysql-project</p>
 			</footer>
 </body>
 </html>
