@@ -1,10 +1,5 @@
 <?php
-
-$res_id=MySQLi_Connect('localhost','amanzer','','amanzer');
-					if(MySQLi_Connect_Errno()) {
-						echo "<tr align='center'> <td colspan='5'> Failed to connect to MySQL </td> </tr>";
-					}
-					else {
-					}
+$config = parse_ini_file('/home/amanzer/public_html/Assign-4B/config.ini');
+$resid=MySQLi_Connect($config['servername'],$config['username'],$config['password'],$config['dbname']);
 
 ?>
