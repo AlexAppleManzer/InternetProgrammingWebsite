@@ -1,0 +1,7 @@
+body {
+  background-color: black
+}
+
+.router-outlet{
+  margin: 20px;
+}
