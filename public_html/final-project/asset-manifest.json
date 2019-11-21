@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/home/alexapple/KSUSpring2019/internet-programming/InternetProgrammingWebsite/react-app/build/static/css/main.2be37757.chunk.css",
+    "main.js": "/home/alexapple/KSUSpring2019/internet-programming/InternetProgrammingWebsite/react-app/build/static/js/main.138ac79c.chunk.js",
+    "main.js.map": "/home/alexapple/KSUSpring2019/internet-programming/InternetProgrammingWebsite/react-app/build/static/js/main.138ac79c.chunk.js.map",
+    "runtime-main.js": "/home/alexapple/KSUSpring2019/internet-programming/InternetProgrammingWebsite/react-app/build/static/js/runtime-main.44c374ea.js",
+    "runtime-main.js.map": "/home/alexapple/KSUSpring2019/internet-programming/InternetProgrammingWebsite/react-app/build/static/js/runtime-main.44c374ea.js.map",
+    "static/css/2.833dd627.chunk.css": "/home/alexapple/KSUSpring2019/internet-programming/InternetProgrammingWebsite/react-app/build/static/css/2.833dd627.chunk.css",
+    "static/js/2.75323ac2.chunk.js": "/home/alexapple/KSUSpring2019/internet-programming/InternetProgrammingWebsite/react-app/build/static/js/2.75323ac2.chunk.js",
+    "static/js/2.75323ac2.chunk.js.map": "/home/alexapple/KSUSpring2019/internet-programming/InternetProgrammingWebsite/react-app/build/static/js/2.75323ac2.chunk.js.map",
+    "index.html": "/home/alexapple/KSUSpring2019/internet-programming/InternetProgrammingWebsite/react-app/build/index.html",
+    "precache-manifest.6dc1c6fc1437ae258e06a483e6b2e418.js": "/home/alexapple/KSUSpring2019/internet-programming/InternetProgrammingWebsite/react-app/build/precache-manifest.6dc1c6fc1437ae258e06a483e6b2e418.js",
+    "service-worker.js": "/home/alexapple/KSUSpring2019/internet-programming/InternetProgrammingWebsite/react-app/build/service-worker.js",
+    "static/css/2.833dd627.chunk.css.map": "/home/alexapple/KSUSpring2019/internet-programming/InternetProgrammingWebsite/react-app/build/static/css/2.833dd627.chunk.css.map",
+    "static/css/main.2be37757.chunk.css.map": "/home/alexapple/KSUSpring2019/internet-programming/InternetProgrammingWebsite/react-app/build/static/css/main.2be37757.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.44c374ea.js",
+    "static/css/2.833dd627.chunk.css",
+    "static/js/2.75323ac2.chunk.js",
+    "static/css/main.2be37757.chunk.css",
+    "static/js/main.138ac79c.chunk.js"
+  ]
+}
