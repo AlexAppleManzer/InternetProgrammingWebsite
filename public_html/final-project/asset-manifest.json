@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/home/alexapple/KSUSpring2019/internet-programming/InternetProgrammingWebsite/react-app/build/static/css/main.2be37757.chunk.css",
-    "main.js": "/home/alexapple/KSUSpring2019/internet-programming/InternetProgrammingWebsite/react-app/build/static/js/main.138ac79c.chunk.js",
-    "main.js.map": "/home/alexapple/KSUSpring2019/internet-programming/InternetProgrammingWebsite/react-app/build/static/js/main.138ac79c.chunk.js.map",
-    "runtime-main.js": "/home/alexapple/KSUSpring2019/internet-programming/InternetProgrammingWebsite/react-app/build/static/js/runtime-main.44c374ea.js",
-    "runtime-main.js.map": "/home/alexapple/KSUSpring2019/internet-programming/InternetProgrammingWebsite/react-app/build/static/js/runtime-main.44c374ea.js.map",
-    "static/css/2.833dd627.chunk.css": "/home/alexapple/KSUSpring2019/internet-programming/InternetProgrammingWebsite/react-app/build/static/css/2.833dd627.chunk.css",
-    "static/js/2.75323ac2.chunk.js": "/home/alexapple/KSUSpring2019/internet-programming/InternetProgrammingWebsite/react-app/build/static/js/2.75323ac2.chunk.js",
-    "static/js/2.75323ac2.chunk.js.map": "/home/alexapple/KSUSpring2019/internet-programming/InternetProgrammingWebsite/react-app/build/static/js/2.75323ac2.chunk.js.map",
-    "index.html": "/home/alexapple/KSUSpring2019/internet-programming/InternetProgrammingWebsite/react-app/build/index.html",
-    "precache-manifest.6dc1c6fc1437ae258e06a483e6b2e418.js": "/home/alexapple/KSUSpring2019/internet-programming/InternetProgrammingWebsite/react-app/build/precache-manifest.6dc1c6fc1437ae258e06a483e6b2e418.js",
-    "service-worker.js": "/home/alexapple/KSUSpring2019/internet-programming/InternetProgrammingWebsite/react-app/build/service-worker.js",
-    "static/css/2.833dd627.chunk.css.map": "/home/alexapple/KSUSpring2019/internet-programming/InternetProgrammingWebsite/react-app/build/static/css/2.833dd627.chunk.css.map",
-    "static/css/main.2be37757.chunk.css.map": "/home/alexapple/KSUSpring2019/internet-programming/InternetProgrammingWebsite/react-app/build/static/css/main.2be37757.chunk.css.map"
+    "main.css": "/~amanzer/final-project/static/css/main.2be37757.chunk.css",
+    "main.js": "/~amanzer/final-project/static/js/main.8a47dcd0.chunk.js",
+    "main.js.map": "/~amanzer/final-project/static/js/main.8a47dcd0.chunk.js.map",
+    "runtime-main.js": "/~amanzer/final-project/static/js/runtime-main.0c13b121.js",
+    "runtime-main.js.map": "/~amanzer/final-project/static/js/runtime-main.0c13b121.js.map",
+    "static/css/2.833dd627.chunk.css": "/~amanzer/final-project/static/css/2.833dd627.chunk.css",
+    "static/js/2.75323ac2.chunk.js": "/~amanzer/final-project/static/js/2.75323ac2.chunk.js",
+    "static/js/2.75323ac2.chunk.js.map": "/~amanzer/final-project/static/js/2.75323ac2.chunk.js.map",
+    "index.html": "/~amanzer/final-project/index.html",
+    "precache-manifest.bae128d60c0f0211aae07ce290a51fff.js": "/~amanzer/final-project/precache-manifest.bae128d60c0f0211aae07ce290a51fff.js",
+    "service-worker.js": "/~amanzer/final-project/service-worker.js",
+    "static/css/2.833dd627.chunk.css.map": "/~amanzer/final-project/static/css/2.833dd627.chunk.css.map",
+    "static/css/main.2be37757.chunk.css.map": "/~amanzer/final-project/static/css/main.2be37757.chunk.css.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.44c374ea.js",
+    "static/js/runtime-main.0c13b121.js",
     "static/css/2.833dd627.chunk.css",
     "static/js/2.75323ac2.chunk.js",
     "static/css/main.2be37757.chunk.css",
-    "static/js/main.138ac79c.chunk.js"
+    "static/js/main.8a47dcd0.chunk.js"
   ]
 }
