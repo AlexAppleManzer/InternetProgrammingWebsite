@@ -1,7 +1,15 @@
 import React from 'react'
 import axios from 'axios';
+import {toast} from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
+import './Home.css'
 
 export default class CatFacts extends React.Component {
+  notify = () => toast("You are now unsub.... Just kidding you can never escape!", {
+    position: "bottom-center",
+    className: 'black-background',
+    bodyClassName: "grow-font-size",
+  });
   constructor(props) {
     super(props);
     this.state = {
@@ -48,7 +56,7 @@ export default class CatFacts extends React.Component {
                 {item.fact}
           </p>
 
-          <button>Click Here to Unsubscribe!</button>
+          <button className="btn btn-danger" onClick={this.notify}>Click Here to Unsubscribe!</button>
         </div>
       );
     }

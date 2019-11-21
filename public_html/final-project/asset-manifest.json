@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/~amanzer/final-project/static/css/main.2be37757.chunk.css",
-    "main.js": "/~amanzer/final-project/static/js/main.8a47dcd0.chunk.js",
-    "main.js.map": "/~amanzer/final-project/static/js/main.8a47dcd0.chunk.js.map",
+    "main.css": "/~amanzer/final-project/static/css/main.e127e730.chunk.css",
+    "main.js": "/~amanzer/final-project/static/js/main.51ccc075.chunk.js",
+    "main.js.map": "/~amanzer/final-project/static/js/main.51ccc075.chunk.js.map",
     "runtime-main.js": "/~amanzer/final-project/static/js/runtime-main.0c13b121.js",
     "runtime-main.js.map": "/~amanzer/final-project/static/js/runtime-main.0c13b121.js.map",
-    "static/css/2.833dd627.chunk.css": "/~amanzer/final-project/static/css/2.833dd627.chunk.css",
-    "static/js/2.75323ac2.chunk.js": "/~amanzer/final-project/static/js/2.75323ac2.chunk.js",
-    "static/js/2.75323ac2.chunk.js.map": "/~amanzer/final-project/static/js/2.75323ac2.chunk.js.map",
+    "static/css/2.7fbed7ba.chunk.css": "/~amanzer/final-project/static/css/2.7fbed7ba.chunk.css",
+    "static/js/2.069c7838.chunk.js": "/~amanzer/final-project/static/js/2.069c7838.chunk.js",
+    "static/js/2.069c7838.chunk.js.map": "/~amanzer/final-project/static/js/2.069c7838.chunk.js.map",
     "index.html": "/~amanzer/final-project/index.html",
-    "precache-manifest.bae128d60c0f0211aae07ce290a51fff.js": "/~amanzer/final-project/precache-manifest.bae128d60c0f0211aae07ce290a51fff.js",
+    "precache-manifest.ff518a720e0cbe8ef3cc7d0ea63220f3.js": "/~amanzer/final-project/precache-manifest.ff518a720e0cbe8ef3cc7d0ea63220f3.js",
     "service-worker.js": "/~amanzer/final-project/service-worker.js",
-    "static/css/2.833dd627.chunk.css.map": "/~amanzer/final-project/static/css/2.833dd627.chunk.css.map",
-    "static/css/main.2be37757.chunk.css.map": "/~amanzer/final-project/static/css/main.2be37757.chunk.css.map"
+    "static/css/2.7fbed7ba.chunk.css.map": "/~amanzer/final-project/static/css/2.7fbed7ba.chunk.css.map",
+    "static/css/main.e127e730.chunk.css.map": "/~amanzer/final-project/static/css/main.e127e730.chunk.css.map"
   },
   "entrypoints": [
     "static/js/runtime-main.0c13b121.js",
-    "static/css/2.833dd627.chunk.css",
-    "static/js/2.75323ac2.chunk.js",
-    "static/css/main.2be37757.chunk.css",
-    "static/js/main.8a47dcd0.chunk.js"
+    "static/css/2.7fbed7ba.chunk.css",
+    "static/js/2.069c7838.chunk.js",
+    "static/css/main.e127e730.chunk.css",
+    "static/js/main.51ccc075.chunk.js"
   ]
 }

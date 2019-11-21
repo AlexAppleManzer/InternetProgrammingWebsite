@@ -5,6 +5,7 @@ import {
   Route,
   Switch,
 } from 'react-router-dom';
+import {toast} from 'react-toastify';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
@@ -13,8 +14,11 @@ import CatFacts from "./CatFacts";
 import Home from "./Home"
 
 function App() {
+  document.title = "Cat Facts Project"
+
+  toast.configure();
   return (
-    <Router>
+    <Router basename="/~amanzer/final-project">
       <div>
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
           <Link to="/" className="navbar-brand">Cat Facts!</Link>
@@ -51,7 +55,15 @@ function App() {
 
 
 function About() {
-  return <h2>About</h2>;
+  return (
+    <div className="card-body">
+      <h2>About The Site</h2>
+      <p>This site uses information provided by the Cat facts API <a href="https://catfact.ninja">Link Here</a></p>
+      <p>It was made using React and the source is <a href="https://github.com/AlexAppleManzer/InternetProgrammingWebsite">Here</a></p>
+    </div>
+
+
+  );
 }
 
 export default App;
