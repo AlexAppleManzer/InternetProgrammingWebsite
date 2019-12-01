@@ -1,7 +1,7 @@
 <?php
   // create short variable names
-  $comment = (string) $_POST['comment'];
-  $name = (string) $_POST['name'];
+  $comment = $_POST['comment'];
+  $name = $_POST['name'];
   $document_root = $_SERVER['__PATH__'];
   $date = date('H:i, jS F Y');
 ?>
