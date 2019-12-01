@@ -40,6 +40,7 @@
       if ($conn->query($sql) === TRUE) {
         echo "<p>Order written.</p>";
       } else {
+        echo "fuck".$conn;
         throw new Exception("Error: " . $sql . "<br>" . $conn->error);
       }
     ?>
