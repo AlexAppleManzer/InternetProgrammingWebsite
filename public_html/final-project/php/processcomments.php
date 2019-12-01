@@ -41,7 +41,7 @@
       if ($conn->query($sql) === TRUE) {
         echo "<p>Order written.</p>";
       } else {
-        echo "fuck";
+        echo "fuck".$conn->error;
         throw new Exception("Error: " . $sql . "<br>" . $conn->error);
       }
     ?>
