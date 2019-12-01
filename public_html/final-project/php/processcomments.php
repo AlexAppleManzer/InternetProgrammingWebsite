@@ -25,15 +25,16 @@
       $servername = "localhost";
       $username = "amanzer";
       $password = "";
+      $dbname = "amanzer";
 
       // Create connection
-      $conn = new mysqli($servername, $username, $password);
+      $conn = new mysqli($servername, $username, $password, $dbname);
 
       // Check connection
       if ($conn->connect_error) {
         throw new Exception("Connection failed: " . $conn->connect_error);
       }
-      $sql = "INSERT INTO amanzer.Comments (Username, Comment)
+      $sql = "INSERT INTO Comments (Username, Comment)
               VALUES ($username, $comment)";
 
       if ($conn->query($sql) === TRUE) {
