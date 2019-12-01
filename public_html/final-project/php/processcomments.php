@@ -35,7 +35,7 @@
         throw new Exception("Connection failed: " . $conn->connect_error);
       }
       $sql = "INSERT INTO Comments (Username, Comment)
-              VALUES ($username, $comment)";
+              VALUES ($name, $comment)";
 
       if ($conn->query($sql) === TRUE) {
         echo "<p>Order written.</p>";
