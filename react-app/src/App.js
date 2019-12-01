@@ -29,6 +29,7 @@ function App() {
             <Link className="nav-item nav-link" to="/">Home</Link>
             <Link className="nav-item nav-link" to="/about">About</Link>
             <Link className="nav-item nav-link" to="/facts">Facts</Link>
+            <a href="./php/insertcomment.html">Create A Comment</a>
           </div>
         </nav>
 

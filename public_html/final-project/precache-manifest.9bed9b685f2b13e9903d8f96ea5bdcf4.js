@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3a88f64276a6f371d1deb53eee77c337",
+    "revision": "d15623a0271002b763060bd810e2b2c3",
     "url": "/~amanzer/final-project/index.html"
   },
   {
@@ -8,16 +8,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/~amanzer/final-project/static/css/2.7fbed7ba.chunk.css"
   },
   {
-    "revision": "87cbdfc44057d9b310cd",
-    "url": "/~amanzer/final-project/static/css/main.e127e730.chunk.css"
+    "revision": "953c11594fc0940d1c1d",
+    "url": "/~amanzer/final-project/static/css/main.8929d390.chunk.css"
   },
   {
     "revision": "883bf223743a0443c215",
     "url": "/~amanzer/final-project/static/js/2.069c7838.chunk.js"
   },
   {
-    "revision": "87cbdfc44057d9b310cd",
-    "url": "/~amanzer/final-project/static/js/main.51ccc075.chunk.js"
+    "revision": "953c11594fc0940d1c1d",
+    "url": "/~amanzer/final-project/static/js/main.5cbd0679.chunk.js"
   },
   {
     "revision": "76b237a0e2828b740d32",

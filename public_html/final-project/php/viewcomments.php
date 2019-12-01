@@ -17,8 +17,8 @@
     </style>
   </head>
   <body>
-    <h1>Bob's Auto Parts</h1>
-    <h2>Customer Orders</h2> 
+    <h1>Cat Facts Comments</h1>
+    <h2>Comments</h2> 
     <?php
       $servername = "localhost";
       $username = "amanzer";
@@ -48,6 +48,7 @@
       }
       $conn->close(); 
     ?>
-    <a href="./insertcomment.html">New Order</a>
+    <a href="./insertcomment.html">New Comment</a>
+    <a href="../index.html">Back To Website</a>
   </body>
 </html>
