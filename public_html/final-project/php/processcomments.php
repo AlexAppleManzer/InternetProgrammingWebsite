@@ -18,7 +18,7 @@
       echo "<p>Your comment is as follows: </p>";
 
       echo "<p>Comment: ".$comment."<br />";
-      echo "Name:".$name."</p>"
+      echo "Name:".$name."</p>";
       
 
       // open file for appending
